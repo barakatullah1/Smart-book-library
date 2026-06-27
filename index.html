@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Book Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Smart Book Library Dashboard</h1>
+  <p>Manage your personal book collection easily and efficiently</p>
+</header>
+
+<section class="stats">
+  Total Books: <span id="totalBooks">0</span>
+</section>
+
+<section class="form-container">
+  <h2>Add New Book</h2>
+
+  <form id="bookForm">
+    <input type="text" id="title" placeholder="Book Title" required>
+    <input type="text" id="author" placeholder="Author Name" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="number" id="year" placeholder="Year" required>
+    <button type="submit">Add Book</button>
+  </form>
+</section>
+
+<section class="controls">
+  <input type="text" id="search" placeholder="Search by book title...">
+
+  <select id="filter">
+    <option value="all">All Categories</option>
+  </select>
+</section>
+
+<section id="bookList" class="book-grid"></section>
+
+<script src="app.js"></script>
+</body>
+</html>
